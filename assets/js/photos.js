@@ -22,7 +22,7 @@ $(document).ready(function(){
         }
 
         // 获取所有图片
-        const apiUrl = baseUrl + '/apis/console.api.photo.halo.run/v1alpha1/photogroup';
+        const apiUrl = baseUrl + '/apis/api.plugin.halo.run/v1alpha1/plugins/PluginPhotos/photos';
         $.getJSON(apiUrl, function(data) {
             allImages = data.items; // 假设这是图片数组
             callback();
